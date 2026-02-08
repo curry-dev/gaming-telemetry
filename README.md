@@ -28,46 +28,6 @@ This project focuses on **data modeling, normalization, and advanced SQL program
 
 ---
 
-## 🗂️ Project Structure
-
-gaming-telemetry-platform/
-│
-├── schema/
-│ ├── tables.sql
-│ ├── constraints.sql
-│ └── indexes.sql
-│
-├── stored-procedures/
-│ └── ingestion/
-│
-├── triggers/
-│
-├── views/
-│
-├── seed-data/
-│
-├── docs/
-│ ├── er-diagram.png
-│ └── design-notes.md
-│
-└── README.md
-
----
-
-## 🧱 Core Entities
-
-- Player
-- Session
-- GameEvent
-- EventType
-- Purchase
-- Achievement
-- PlayerAchievement
-- Device
-- Region
-- AuditLog
-- AntiCheatFlag
-
 The schema is intentionally designed to support **high-volume event data**, lifecycle tracking, and extensibility.
 
 ---
@@ -76,26 +36,4 @@ The schema is intentionally designed to support **high-volume event data**, life
 
 All data is inserted through **stored procedures**, simulating real-time ingestion from a game client or API layer.
 
-This ensures:
-- Consistent validation
-- Centralized business logic
-- Automatic trigger execution
-- Production-like data flow
-
 Synthetic event generation is used to simulate player behavior for testing and demonstration.
-
----
-
-## 🚀 Future Extensions (Planned)
-
-- Data warehouse (star schema)
-- ETL pipelines
-- BI dashboards (Power BI / Tableau)
-- ML-based churn and anomaly detection
-- Cloud deployment (Azure / AWS / Snowflake)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
