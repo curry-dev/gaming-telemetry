@@ -8,7 +8,7 @@ CREATE PROCEDURE telemetry.sp_record_match_result
     @outcome VARCHAR(10)
 AS
 BEGIN
-    SET NOCOUNT ON;
+    -- SET NOCOUNT ON;
 
     INSERT INTO telemetry.match_results
         (match_id, player_id, xp_earned, coins_earned, outcome)
